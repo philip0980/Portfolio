@@ -1,0 +1,551 @@
+:root {
+  --grey: rgb(107, 114, 128);
+}
+
+html {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+}
+
+#bar {
+  display: none;
+}
+
+body {
+  width: 100vw;
+  font-family: Arial, sans-serif;
+  margin: auto;
+  padding: 0;
+  background-color: #e6e6e6;
+  font-family: "Jost", sans-serif;
+}
+
+.left_section h2 {
+  position: relative;
+  left: 70px;
+}
+
+main {
+  margin-top: 5rem;
+  width: 100vw;
+}
+
+.head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 6;
+}
+
+nav {
+  z-index: 5;
+  background-color: rgb(230, 230, 230, 0.66);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  width: 90vw;
+  margin: auto;
+}
+
+#top-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.head nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.head nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-margin: 600px;
+}
+
+.overview h1 {
+  font-family: "Jost", sans-serif;
+  font-size: 76.5px;
+  font-weight: 600;
+  line-height: 76.5px;
+  position: relative;
+  bottom: 40px;
+}
+
+.overview,
+.image {
+  width: 50vw;
+}
+
+.overview {
+  padding-left: 60px;
+}
+
+.overview p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28.9px;
+  position: relative;
+  bottom: 70px;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main section h3 {
+  color: var(--grey);
+}
+
+p {
+  color: var(--grey);
+}
+
+button {
+  padding: 14px 40px;
+  border-radius: 14px;
+  margin: 0 16px;
+  border: 2px solid rgb(56, 65, 81);
+}
+
+button:hover {
+  background-color: rgb(56, 65, 81);
+}
+
+.buttons {
+  position: relative;
+  bottom: 60px;
+}
+
+#about,
+#projects,
+#contact {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left_section,
+.image_section {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left_section h1,
+.left_section h2 {
+  font-size: 102px;
+  font-weight: 700;
+  line-height: 102px;
+}
+
+.underline1,
+.underline2 {
+  height: 5px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: black;
+  margin: 10px;
+}
+
+.underline2 {
+  position: relative;
+  left: 30px;
+}
+
+.left_section p,
+.left_section button,
+.left_section h4,
+.sm-links {
+  position: relative;
+  bottom: 60px;
+}
+
+.sm-links ul {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.left_section h4 {
+  position: relative;
+  right: 140px;
+}
+
+.sm-links {
+  position: relative;
+  right: 160px;
+}
+
+#contact .left_section {
+  line-height: 10px;
+}
+
+img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: ease-in-out 0.2s;
+}
+img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  transition: ease-in-out 0.2s;
+}
+
+#skills {
+  width: 90vw;
+  margin: auto;
+  height: 100vh;
+  scroll-margin: 100px;
+}
+#skills h1 {
+  font-size: 102px;
+  font-weight: 700;
+  line-height: 102px;
+}
+
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  list-style-type: none;
+}
+
+#skills ul li {
+  border: 1px solid black;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: var(--grey);
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+nav h2 a,
+.buttons button a {
+  text-decoration: none;
+  color: black;
+}
+
+.sm-links ul li a img {
+  height: 40px;
+  width: 40px;
+}
+
+/* For large screens */
+@media (min-width: 1200px) {
+  .overview h1 {
+    font-size: 100px;
+  }
+  .overview p {
+    font-size: 20px;
+  }
+  .left_section h1,
+  .left_section h2 {
+    font-size: 120px;
+  }
+  #skills h1 {
+    font-size: 120px;
+  }
+}
+
+/* For tablets */
+@media (max-width: 1024px) {
+  nav {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .overview,
+  .image {
+    width: 100vw;
+    padding-left: 0;
+    text-align: center;
+  }
+  .overview h1 {
+    font-size: 50px;
+  }
+  .overview p {
+    font-size: 15px;
+  }
+  .left_section,
+  .image_section {
+    width: 100vw;
+  }
+  .left_section h1,
+  .left_section h2 {
+    font-size: 80px;
+  }
+  #skills h1 {
+    font-size: 80px;
+  }
+
+  p {
+    position: relative;
+    left: 20px;
+  }
+
+  #contact {
+    margin-top: 180px;
+  }
+
+  .buttons {
+    display: flex;
+  }
+
+  nav h2 {
+    padding-left: 30px;
+  }
+
+  /* nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  } */
+
+  /* nav ul li a {
+    font-size: 26px;
+    margin: 10px 0;
+  }
+  nav ul li {
+    display: none;
+    margin: 10px 0;
+  } */
+
+  /* 
+  #bar {
+    display: none;
+  } */
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  nav {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+  }
+  #top-nav {
+    padding: 0;
+  }
+  #bar {
+    padding-right: 40px;
+    display: block;
+  }
+  nav ul {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  nav ul li a {
+    font-size: 26px;
+    margin: 10px 0;
+  }
+
+  .head nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 10px 0;
+    display: none;
+  }
+  .overview,
+  .image {
+    width: 100vw;
+    padding-left: 0;
+    text-align: center;
+  }
+  .overview h1 {
+    font-size: 40px;
+  }
+  .overview p {
+    font-size: 14px;
+  }
+  .left_section,
+  .image_section {
+    width: 100vw;
+  }
+  .left_section h1,
+  .left_section h2 {
+    font-size: 60px;
+  }
+  #skills h1 {
+    font-size: 60px;
+  }
+  .left_section h4,
+  .sm-links {
+    position: static;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+/* For mobile devices with 320px width */
+@media (max-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+
+  nav {
+    width: 100vw;
+    flex-direction: row;
+  }
+
+  #bar {
+    padding-right: 20px;
+    font-size: 14px;
+  }
+
+  nav ul {
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    align-content: center;
+    padding: 0;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+
+  .head nav ul {
+    flex-direction: column;
+    gap: 0.25rem;
+    margin: 5px 0;
+    display: none;
+  }
+
+  .container {
+    width: 90vw;
+    margin: auto;
+  }
+
+  #home {
+    flex-direction: column;
+  }
+  #contact,
+  #about,
+  #projects,
+  #contact {
+    flex-direction: column;
+    margin-top: 200px;
+  }
+
+  .overview p {
+    margin-right: 20px;
+  }
+
+  #skills,
+  #contact {
+    margin-top: 10rem;
+  }
+
+  #skills ul {
+    padding: 0;
+    margin: 20px 0;
+    gap: 3px;
+  }
+
+  #contact {
+    margin-top: 100rem;
+  }
+
+  .overview,
+  .image {
+    width: 100vw;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .overview h1 {
+    font-size: 30px;
+  }
+
+  .overview p {
+    font-size: 12px;
+  }
+
+  .left_section,
+  .image_section {
+    width: 100vw;
+  }
+
+  .left_section h1,
+  .left_section h2 {
+    font-size: 40px;
+  }
+
+  .left_section p,
+  .left_section button,
+  .left_section h4,
+  .sm-links {
+    bottom: 30px;
+  }
+
+  #skills h1 {
+    font-size: 40px;
+  }
+
+  .left_section h4,
+  .sm-links {
+    position: static;
+    right: 0;
+    bottom: 0;
+  }
+
+  p {
+    position: relative;
+    left: 10px;
+    font-size: 10px;
+  }
+
+  #contact {
+    margin-top: 90px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  nav h2 {
+    padding-left: 10px;
+    font-size: 18px;
+  }
+}
