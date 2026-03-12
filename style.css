@@ -6,7 +6,7 @@ html {
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
-  width: 100vw;
+  width: 100%;
 }
 
 #bar {
@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   font-family: Arial, sans-serif;
   margin: auto;
   padding: 0;
@@ -25,11 +25,13 @@ body {
 .left_section h2 {
   position: relative;
   left: 70px;
+  /* margin-left: 90px; */
+  position: static;
 }
 
 main {
   margin-top: 5rem;
-  width: 100vw;
+  width: 100%;
 }
 
 .head {
@@ -90,6 +92,8 @@ section {
   line-height: 76.5px;
   position: relative;
   bottom: 40px;
+  /* margin-bottom: 80px; */
+  /* position: static; */
 }
 
 .overview,
@@ -107,6 +111,7 @@ section {
   line-height: 28.9px;
   position: relative;
   bottom: 70px;
+  /* margin-bottom: 70px; */
 }
 
 .image {
@@ -137,13 +142,14 @@ button:hover {
 .buttons {
   position: relative;
   bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 #about,
 #projects,
 #contact {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,6 +191,7 @@ button:hover {
 .sm-links {
   position: relative;
   bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 .sm-links ul {
@@ -196,11 +203,13 @@ button:hover {
 .left_section h4 {
   position: relative;
   right: 140px;
+  /* margin-right: 140px; */
 }
 
 .sm-links {
   position: relative;
   right: 160px;
+  /* margin-right: 160px; */
 }
 
 #contact .left_section {
@@ -282,14 +291,14 @@ nav h2 a,
 /* For tablets */
 @media (max-width: 1024px) {
   nav {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
   .overview,
   .image {
-    width: 100vw;
+    width: 100%;
     padding-left: 0;
     text-align: center;
   }
@@ -301,7 +310,7 @@ nav h2 a,
   }
   .left_section,
   .image_section {
-    width: 100vw;
+    width: 100%;
   }
   .left_section h1,
   .left_section h2 {
@@ -312,8 +321,9 @@ nav h2 a,
   }
 
   p {
-    position: relative;
-    left: 20px;
+    /* position: relative; */
+    /* left: 20px; */
+    margin-left: 20px;
   }
 
   #contact {
@@ -353,20 +363,29 @@ nav h2 a,
 /* For mobile devices */
 @media (max-width: 768px) {
   nav {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
   }
   #top-nav {
     padding: 0;
   }
+  /* .bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
   #bar {
+    padding-top: 20px;
     padding-right: 40px;
+    /* padding: 0; */
+    /* margin: 0; */
     display: block;
   }
   nav ul {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -405,7 +424,7 @@ nav h2 a,
   }
   .overview,
   .image {
-    width: 100vw;
+    width: 100%;
     padding-left: 0;
     text-align: center;
   }
@@ -417,7 +436,7 @@ nav h2 a,
   }
   .left_section,
   .image_section {
-    width: 100vw;
+    width: 100%;
   }
   .left_section h1,
   .left_section h2 {
@@ -432,6 +451,10 @@ nav h2 a,
     right: 0;
     bottom: 0;
   }
+  #contact h4 {
+    margin: 0;
+    padding-bottom: 12px;
+  }
 }
 
 /* For mobile devices with 320px width */
@@ -441,7 +464,7 @@ nav h2 a,
   }
 
   nav {
-    width: 100vw;
+    width: 100%;
     flex-direction: row;
   }
 
@@ -452,7 +475,7 @@ nav h2 a,
 
   nav ul {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     flex-direction: column;
     align-content: center;
     padding: 0;
@@ -507,7 +530,7 @@ nav h2 a,
 
   .overview,
   .image {
-    width: 100vw;
+    width: 100%;
     padding-left: 0;
     text-align: center;
   }
@@ -522,7 +545,7 @@ nav h2 a,
 
   .left_section,
   .image_section {
-    width: 100vw;
+    width: 100%;
   }
 
   .left_section h1,
