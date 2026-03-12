@@ -383,6 +383,26 @@ nav h2 a,
     margin: 10px 0;
     display: none;
   }
+
+  #home {
+    flex-direction: column;
+  }
+  #contact,
+  #about,
+  #projects,
+  #contact {
+    flex-direction: column;
+    margin-top: 200px;
+  }
+  p {
+    padding-right: 50px;
+  }
+
+  #skills ul {
+    padding: 0;
+    margin: 20px 0;
+    gap: 3px;
+  }
   .overview,
   .image {
     width: 100vw;
